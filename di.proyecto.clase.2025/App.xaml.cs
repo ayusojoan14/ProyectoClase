@@ -66,6 +66,7 @@ namespace di.proyecto.clase._2025
             services.AddTransient<UCArticulos>();
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();
+            services.AddTransient<DialogoUsuario>();
 
             //Registramos los objetos MVVM
             services.AddTransient<MVArticulo>();

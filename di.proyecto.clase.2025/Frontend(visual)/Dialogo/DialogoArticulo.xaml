@@ -73,6 +73,8 @@
                           FontWeight="Bold"
                           mat:HintAssist.Hint="Selecciona un modelo*"
                           ItemsSource="{Binding listaModelosArticulos}"
+                          Text="{Binding articulo.ModeloNavigation,ValidatesOnDataErrors=True,
+                          NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"
                           Style="{StaticResource MaterialDesignComboBox}"
                           DisplayMemberPath="Nombre"/>
 
@@ -180,6 +182,8 @@
                           Height="40"
                           FontWeight="Bold"
                           ItemsSource="{Binding listaEspacios}"
+                           SelectedItem="{Binding articulo.EspacioNavigation,ValidatesOnDataErrors=True,
+                           UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
                           mat:HintAssist.Hint="Selecciona un espacio*"
                           Style="{StaticResource MaterialDesignComboBox}"
                           DisplayMemberPath="Nombre"/>

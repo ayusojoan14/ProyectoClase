@@ -11,5 +11,8 @@
     <Compile Update="Frontend%28visual%29\Dialogo\DialogoModeloArticulo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Frontend%28visual%29\Dialogo\DialogoUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

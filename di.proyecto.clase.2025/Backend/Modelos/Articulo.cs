@@ -78,12 +78,13 @@ public partial class Articulo : ValidatableViewModel
 
     [ForeignKey("Departamento")]
     [InverseProperty("Articulos")]
-    [Required(ErrorMessage = "El espacio es obligatorio")]
+    [Required(ErrorMessage = "El departamento es obligatorio")]
     public virtual Departamento? DepartamentoNavigation { get; set; }
 
     [ForeignKey("Espacio")]
     [InverseProperty("Articulos")]
-    
+    [Required(ErrorMessage = "El espacio es obligatorio")]
+
     public virtual Espacio EspacioNavigation { get; set; } = null!;
 
     [InverseProperty("DentrodeNavigation")]
@@ -92,6 +93,8 @@ public partial class Articulo : ValidatableViewModel
 
     [ForeignKey("Modelo")]
     [InverseProperty("Articulos")]
+    [Required(ErrorMessage = "El modelo es obligatorio")]
+
     public virtual Modeloarticulo ModeloNavigation { get; set; } = null!;
 
     [InverseProperty("ArticuloNavigation")]

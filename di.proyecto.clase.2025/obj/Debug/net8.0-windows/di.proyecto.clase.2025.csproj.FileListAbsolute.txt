@@ -146,3 +146,5 @@ C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.cl
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\di.proyecto.clase.2025.pdb
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\di.proyecto.clase.2025.genruntimeconfig.cache
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\ref\di.proyecto.clase.2025.dll
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoUsuario.g.cs
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoUsuario.baml
