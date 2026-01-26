@@ -25,6 +25,7 @@ public partial class Usuario
     /// </summary>
     [Column("username")]
     [StringLength(20)]
+    [Required(ErrorMessage = "El nombre del usuario es obligatorio")]
     public string Username { get; set; } = null!;
 
     [Column("password")]

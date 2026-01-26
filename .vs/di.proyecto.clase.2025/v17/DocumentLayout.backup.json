@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\modelos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\modelos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\modelos\\modeloarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\modelos\\modeloarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\frontend(visual)\\dialogo\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\frontend(visual)\\dialogo\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\modelos\\tipoarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\modelos\\tipoarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\modelos\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\modelos\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\frontend(visual)\\dialogo\\dialogousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\frontend(visual)\\dialogo\\dialogousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\mvvm\\mvusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\mvvm\\mvusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\frontend(visual)\\dialogo\\dialogousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\frontend(visual)\\dialogo\\dialogousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|c:\\users\\windows10\\downloads\\d.i. completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\backend\\servicios(repositorio)\\rolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53388B5D-5A47-41B1-833B-952242C924E1}|di.proyecto.clase.2025\\di.proyecto.clase.2025.csproj|solutionrelative:di.proyecto.clase.2025\\backend\\servicios(repositorio)\\rolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 161,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,76 +66,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\UsuarioRepository.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\UsuarioRepository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwCoAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Modeloarticulo.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Modeloarticulo.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Modelos\\Modeloarticulo.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Modeloarticulo.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Modelos\\Modeloarticulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:59:26.2Z",
+              "WhenOpened": "2026-01-26T09:15:50.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Tipoarticulo.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Tipoarticulo.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Modelos\\Tipoarticulo.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Tipoarticulo.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Modelos\\Tipoarticulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:15:42.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Usuario.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Modelos\\Usuario.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Usuario.cs*",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Modelos\\Usuario.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:10:48.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tipousuario.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Tipousuario.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Modelos\\Tipousuario.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Modelos\\Tipousuario.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Modelos\\Tipousuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:10:34.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TipoUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\TipoUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\TipoUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\TipoUsuarioRepository.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\TipoUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:08:37.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IUsuarioRepository.cs",
               "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IUsuarioRepository.cs",
               "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:58:02.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\Login.xaml.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\Login.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:32:01.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IGenericRepository.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\IGenericRepository.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAkwGsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:53:52.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\GenericRepository.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:50:00.35Z"
+              "WhenOpened": "2026-01-26T09:08:35.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MainWindow.xaml.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\App.xaml.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\App.xaml.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\App.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:26:26.813Z"
+              "WhenOpened": "2026-01-26T08:43:45.154Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -146,55 +164,34 @@
               "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\App.xaml",
               "RelativeToolTip": "di.proyecto.clase.2025\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-14T08:35:52.672Z",
+              "WhenOpened": "2026-01-26T08:46:06.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\AssemblyInfo.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:35:51.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\App.xaml.cs",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\App.xaml.cs",
-              "RelativeToolTip": "di.proyecto.clase.2025\\App.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwEQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:30:59.796Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MainWindow.xaml",
-              "RelativeToolTip": "di.proyecto.clase.2025\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-14T07:32:45.883Z"
+              "Title": "MVUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MVVM\\MVUsuario.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\MVVM\\MVUsuario.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\MVVM\\MVUsuario.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\MVVM\\MVUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:43:21.244Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "DialogoUsuario.xaml.cs",
               "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\DialogoUsuario.xaml.cs",
               "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\DialogoUsuario.xaml.cs",
               "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\DialogoUsuario.xaml.cs",
               "RelativeToolTip": "di.proyecto.clase.2025\\Frontend(visual)\\Dialogo\\DialogoUsuario.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAvwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T07:30:57.776Z"
+              "WhenOpened": "2026-01-26T08:43:08.683Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -205,6 +202,40 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "a021e811-3aea-46ed-a0f9-564eed64806e",
+        "Display": 1,
+        "X": -5,
+        "Y": 0,
+        "Width": 1328,
+        "Height": 725,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RolRepository.cs",
+              "DocumentMoniker": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\RolRepository.cs",
+              "RelativeDocumentMoniker": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\RolRepository.cs",
+              "ToolTip": "C:\\Users\\windows10\\Downloads\\D.I. Completo\\di.proyecto.clase.2025\\di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\RolRepository.cs",
+              "RelativeToolTip": "di.proyecto.clase.2025\\Backend\\Servicios(Repositorio)\\RolRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:29:52.618Z",
+              "EditorCaption": ""
             }
           ]
         }

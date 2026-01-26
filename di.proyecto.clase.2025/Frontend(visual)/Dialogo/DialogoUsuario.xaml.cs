@@ -22,11 +22,58 @@ namespace di.proyecto.clase._2025.Frontend_visual_.Dialogo
     /// </summary>
     public partial class DialogoUsuario : MetroWindow
     {
-        private MVArticulo _mvArticulo;
-        public DialogoUsuario(MVArticulo mVArticulo)
+        private MVUsuario _mvUsuario;
+
+        public DialogoUsuario(MVUsuario mvUsuario)
         {
             InitializeComponent();
-            _mvArticulo = mVArticulo;
+            _mvUsuario = mvUsuario;
+        }
+
+        private async void diagUsuario_Loaded(object sender, RoutedEventArgs e)
+        {
+            await _mvUsuario.Inicializa();
+            this.AddHandler(Validation.ErrorEvent,
+                new RoutedEventHandler(_mvUsuario.OnErrorEvent));
+
+            DataContext = _mvUsuario;
+        }
+
+        private async void btnGuardarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                bool guardado = await _mvUsuario.GuardarUsuarioAsync(txtPassword.Password);
+
+                if (guardado)
+                {
+                    MessageBox.Show("Usuario guardado correctamente",
+                                    "Éxito",
+                                    MessageBoxButton.OK,
+                                    MessageBoxImage.Information);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar el usuario",
+                                    "Error",
+                                    MessageBoxButton.OK,
+                                    MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inesperado: " + ex.Message,
+                                "Error",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+            }
+        }
+
+        private void btnCancelarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
         }
     }
+
 }

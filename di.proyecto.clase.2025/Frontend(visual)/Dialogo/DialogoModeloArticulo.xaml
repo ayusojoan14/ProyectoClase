@@ -119,8 +119,10 @@
             Height="40"
             Margin="10"
             Background="LightGray"/>
-        
-        <!--MODELO-->
+
+            
+
+                <!--MODELO-->
         <TextBox
             x:Name="txtModelo"
             Style="{StaticResource MaterialDesignTextBox}"
@@ -136,8 +138,9 @@
             Margin="10"
             Background="LightGray"
             />
-        
-        <!-- BOTON AÑADIR-->
+           
+
+            <!-- BOTON AÑADIR-->
         <Button
             Grid.Row="4"
             Grid.Column="0"
@@ -152,7 +155,7 @@
             Click="btnAnyadirModeloArticulo_Click"/>
         
         <!--BOTON CANCELAR-->
-        <Button
+            <Button
             Grid.Row="4"
             Grid.Column="1"
             Content="Cancelar"
@@ -166,6 +169,6 @@
             Margin="10"
             x:Name="btnCancelarModeloArticulo"
             Click="btnCancelarModeloArticulo_Click"/>
-    </Grid>
+        </Grid>
     </Grid>
 </mah:MetroWindow>

@@ -53,6 +53,11 @@ namespace di.proyecto.clase._2025
             services.AddScoped<IGenericRepository<Modeloarticulo>, ModeloArticuloRepository>();
             services.AddScoped<IGenericRepository<Articulo>, ArticuloRepository>();
             services.AddScoped<IGenericRepository<Usuario>, UsuarioRepository>();
+            services.AddScoped<IGenericRepository<Tipousuario>, TipoUsuarioRepository>();
+            services.AddScoped<IGenericRepository <Rol>, RolRepository>();
+            services.AddScoped<IGenericRepository<Departamento>, DepartamentoRepository>();
+            services.AddScoped<ITipoUsuarioRepository, TipoUsuarioRepository>();
+
             // Registramos los servicios específicos
             services.AddScoped<UsuarioRepository>();
             services.AddScoped<ArticuloRepository>();
@@ -61,15 +66,21 @@ namespace di.proyecto.clase._2025
             services.AddScoped<DepartamentoRepository>();   
             services.AddScoped<EspacioRepository>();
             services.AddScoped<DialogoModeloArticulo>();
+            services.AddScoped<UsuarioRepository>();
+            services.AddScoped<RolRepository>();
+            services.AddScoped<TipoUsuarioRepository>();
             // Registramos las interfaces de usuario
             services.AddTransient<Login>();
             services.AddTransient<UCArticulos>();
+
+            //Me faltan los 2 users controls 
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();
             services.AddTransient<DialogoUsuario>();
 
             //Registramos los objetos MVVM
             services.AddTransient<MVArticulo>();
+            services.AddTransient<MVUsuario>();
 
 
         }

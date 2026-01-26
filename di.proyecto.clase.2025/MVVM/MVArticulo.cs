@@ -76,8 +76,8 @@ namespace di.proyecto.clase._2025.MVVM
             _espacioRepository = espacioRepository;
             _departamentoRepository = departamentoRepository;
             _usuarioRepository = usuarioRepository;
-            _modeloArticulo = new Modeloarticulo();
-            _articulo = new Articulo();
+            //_modeloArticulo = new Modeloarticulo();
+            //_articulo = new Articulo();
         }
 
         public async Task Inicializa()

@@ -37,6 +37,14 @@ namespace di.proyecto.clase._2025.Frontend_visual_.Dialogo
 
         }
 
+
+        public async Task Inicializa(Modeloarticulo modeloarticulo)
+        {
+            await _mvArticulo.Inicializa();
+            _mvArticulo.modeloArticulo = modeloarticulo;
+            this.AddHandler(Validation.ErrorEvent, new RoutedEventHandler(_mvArticulo.OnErrorEvent));
+            DataContext = _mvArticulo;
+        }
         private async void diagModeloArticulo_Loaded(object sender, RoutedEventArgs e)
         {
             await _mvArticulo.Inicializa();
