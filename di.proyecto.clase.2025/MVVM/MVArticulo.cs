@@ -45,7 +45,7 @@ namespace di.proyecto.clase._2025.MVVM
         private List<Departamento> _listaDepartamentos;
 
 
-
+        //Filtros
         private List<Predicate<Modeloarticulo>> _criterios;
         private Tipoarticulo _tipoarticuloSeleccionado;
         private Predicate<Modeloarticulo> _criterioTipoArticulo;

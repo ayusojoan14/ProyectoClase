@@ -34,16 +34,7 @@ namespace di.proyecto.clase._2025.Frontend_visual_.Dialogo
         }
 
 
-        /*private async void diagArticulo_Loaded(object sender, RoutedEventArgs e)
-        { 
-            // Estado: valores fijos o tabla auxiliar
-            cmbEstado.ItemsSource = new List<string> { "Nuevo", "Usado", "Dañado" };
-            await _mvArticulo.Inicializa();
-            this.AddHandler(Validation.ErrorEvent, new RoutedEventHandler(_mvArticulo.OnErrorEvent));
-            //Esta línea enlaza la interfaz con el MV
-            //SI NO SE PONE DATACONTEXT NO FUNCIONARÁ EL ITEMSOURCE
-            DataContext = _mvArticulo;
-        }*/
+       
 
         public async Task Inicializa(Articulo articulo)
         {

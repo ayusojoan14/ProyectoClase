@@ -77,7 +77,6 @@ namespace di.proyecto.clase._2025
             //services.AddTransient<UCArticulos>();
             services.AddTransient<UCListadoModelos>();
             services.AddTransient<UCListadoArticulos>();
-            services.AddTransient<UCListadoArticulos>();
             services.AddTransient<UCListadoUsuarios>();
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();

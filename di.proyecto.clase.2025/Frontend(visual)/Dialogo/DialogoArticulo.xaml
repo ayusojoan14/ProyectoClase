@@ -12,6 +12,7 @@
       d:DesignHeight="640" d:DesignWidth="600"
       Title="DialogoArticulo"
       x:Name="diagArticulo">
+      
     <Grid>
         <!-- Rectangulo inicial -->
         <Grid Width="Auto"

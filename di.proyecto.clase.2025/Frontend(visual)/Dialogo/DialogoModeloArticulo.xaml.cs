@@ -53,7 +53,7 @@ namespace di.proyecto.clase._2025.Frontend_visual_.Dialogo
             
         }
 
-
+        
 
 
         //Botones por activar

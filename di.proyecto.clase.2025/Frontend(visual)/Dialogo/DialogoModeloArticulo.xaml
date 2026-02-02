@@ -73,8 +73,9 @@
             mat:HintAssist.Hint="Tipo*"
             FontWeight="Bold"
             Grid.Row="2"
-            ItemsSource="{Binding listaTiposArticulos}"
-            SelectedItem="{Binding modeloArticulo.TipoNavigation,ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True,
+            ItemsSource="{Binding listaTipoArticulos}"
+            SelectedItem="{Binding modeloArticulo.TipoNavigation,
+            ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True,
             NotifyOnValidationError=True}"
             Grid.Column="0"
             VerticalAlignment="Center"
