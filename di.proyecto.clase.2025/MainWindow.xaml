@@ -12,83 +12,111 @@
 TitleBarHeight="40"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Fluent:Ribbon>
-            <!--Opción 1: PRESTAMOS -->
-            <Fluent:RibbonTabItem
-                Header="PRESTAMOS"
-                IsSelected="True">
-                <!--Apartado 1 Operaciones-->
-                <Fluent:RibbonGroupBox 
-                    x:Name="ClicpboardOperaciones"
-                    Header="Operaciones"
-                    Margin="5">
-                    <Fluent:Button
-                        LargeIcon="/Recursos/Iconos/salida.png"
-                        Header="Salida"
-                        Margin="0,0,10,0"/>
-                    <Fluent:Button
-                        LargeIcon="/Recursos/Iconos/devolucion.png"
-                        Header="Devolución"/>
-                </Fluent:RibbonGroupBox>
-                <!--Apartado 2 Busquedas-->
-                <Fluent:RibbonGroupBox 
-                     x:Name="ClicpboardBusquedas"
-                     Header="Busquedas">
-                    <TextBlock
-                        Text="Por número de serie"
-                        FontWeight="Bold"
-                        Margin="10"
-                        FontSize="14"/>
-                    <TextBox
-                        BorderBrush="LightGray"
-                        BorderThickness="1"
-                        Margin="5,0"/>
-                </Fluent:RibbonGroupBox>
-                <!--Apartado 3 ModeloArticulo-->
-                <Fluent:RibbonGroupBox 
-                    x:Name="AddListaModeloArticulo"
-                    Header="Modelo Articulo"
-                    Margin="5">
-                    <Fluent:Button
-                        LargeIcon="/Recursos/Iconos/listamodelos.png"
-                        Header="ModeloArticulo"
-                        Foreground="DarkOrange"
-                        Margin="0,0,10,0"
-                        x:Name="btnAddModeloArticulo"
-                        Click="btnAddModeloArticulo_Click"/>
+        <DockPanel>
 
-                </Fluent:RibbonGroupBox>
-                <!--Apartado 3 Operaciones-->
-                <Fluent:RibbonGroupBox 
-                    x:Name="AddListaArticulo"
-                    Header="Articulo"
-                    Margin="5">
-                    <Fluent:Button
-                        LargeIcon="/Recursos/Iconos/articulo.png"
-                        Header="Articulo"
-                        Foreground="DarkOrange"
-                        Margin="0,0,10,0"
-                        x:Name="btnAddArticulo"
-                        Click="btnAddArticulo_Click"/>
+            <!-- RIBBON -->
+            <Fluent:Ribbon DockPanel.Dock="Top">
+                <Fluent:RibbonTabItem Header="PRESTAMOS" IsSelected="True">
 
-                </Fluent:RibbonGroupBox>
-                
-                <!-- Aprtado 4 DialogoUsuario -->
-                <Fluent:RibbonGroupBox 
-                    x:Name="AddListaUsuario"
-                    Header="Usuario"
-                    Margin="5">
-                    <Fluent:Button
-                        LargeIcon="/Recursos/Iconos/articulo.png"
+                    <!-- Operaciones -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="ClipboardOperaciones"
+                        Header="Operaciones"
+                        Margin="5">
+
+                        <Fluent:Button
+                            Header="Lista Articulo"
+                            LargeIcon="/Recursos/Iconos/salida.png"
+                            Click="UCArticulo_Click"
+                            Margin="0,0,10,0"/>
+
+                        <Fluent:Button
+                            Header="Lista Modelo Articulo"
+                            LargeIcon="/Recursos/Iconos/devolucion.png"
+                            Click="UCModelo_Click"/>
+                        <Fluent:Button
+                            Header="Usuarios"
+                            LargeIcon="/Recursos/Iconos/devolucion.png"
+                            Click="UCUsuario_Click"/>
+                    </Fluent:RibbonGroupBox>
+
+                    <!-- Búsquedas -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="ClipboardBusquedas"
+                        Header="Búsquedas"
+                        Margin="5">
+
+                        <TextBlock
+                            Text="Por número de serie"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Margin="10"/>
+
+                        <TextBox
+                            Margin="5,0"
+                            BorderBrush="LightGray"
+                            BorderThickness="1"/>
+                    </Fluent:RibbonGroupBox>
+
+                    <!-- Modelo Artículo -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="AddListaModeloArticulo"
+                        Header="Modelo Artículo"
+                        Margin="5">
+
+                        <Fluent:Button
+                            x:Name="btnAddModeloArticulo"
+                            Header="ModeloArticulo"
+                            LargeIcon="/Recursos/Iconos/listamodelos.png"
+                            Foreground="DarkOrange"
+                            Margin="0,0,10,0"
+                            Click="btnAddModeloArticulo_Click"/>
+                    </Fluent:RibbonGroupBox>
+
+                    <!-- Artículo -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="AddListaArticulo"
+                        Header="Artículo"
+                        Margin="5">
+
+                        <Fluent:Button
+                            x:Name="btnAddArticulo"
+                            Header="Artículo"
+                            LargeIcon="/Recursos/Iconos/articulo.png"
+                            Foreground="DarkOrange"
+                            Margin="0,0,10,0"
+                            Click="btnAddArticulo_Click"/>
+                    </Fluent:RibbonGroupBox>
+
+                    <!-- Usuario -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="AddUsuario"
                         Header="Usuario"
-                        Foreground="DarkOrange"
-                        Margin="0,0,10,0"
-                        x:Name="btnAddUsuario"
-                        Click="btnAddUsuario_Click"/>
-                </Fluent:RibbonGroupBox>
+                        Margin="5">
 
+                        <Fluent:Button
+                            x:Name="btnAddUsuario"
+                            Header="Usuario"
+                            LargeIcon="/Recursos/Iconos/articulo.png"
+                            Foreground="DarkOrange"
+                            Margin="0,0,10,0"
+                            Click="btnAddUsuario_Click"/>
+                    </Fluent:RibbonGroupBox>
 
-            </Fluent:RibbonTabItem>
-        </Fluent:Ribbon>
+                </Fluent:RibbonTabItem>
+            </Fluent:Ribbon>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <Grid x:Name="panelPrincipal">
+                <TextBlock
+                    Text="BIENVENIDO AL SISTEMA DE GESTIÓN DE PRÉSTAMOS DE ARTÍCULOS"
+                    FontSize="10"
+                    FontWeight="Bold"
+                    Foreground="Gray"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+            </Grid>
+
+        </DockPanel>
     </Grid>
 </Fluent:RibbonWindow>

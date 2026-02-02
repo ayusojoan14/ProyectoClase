@@ -11,10 +11,7 @@
       Width="600"
       d:DesignHeight="640" d:DesignWidth="600"
       Title="DialogoArticulo"
-      x:Name="diagArticulo"
-      Loaded="diagArticulo_Loaded"
-      xmlns:sys="clr-namespace:System;assembly=mscorlib">
-
+      x:Name="diagArticulo">
     <Grid>
         <!-- Rectangulo inicial -->
         <Grid Width="Auto"

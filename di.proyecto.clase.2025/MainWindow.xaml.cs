@@ -2,6 +2,7 @@
 using di.proyecto.clase._2025.Frontend_visual_.Dialogo;
 using Fluent;
 using MaterialDesignThemes.Wpf;
+using Microsoft.Extensions.DependencyInjection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,40 +21,66 @@ namespace di.proyecto.clase._2025
     /// </summary>
     public partial class MainWindow : RibbonWindow
     {
-        private DialogoModeloArticulo _dialogoModeloArticulo;
         private DialogoArticulo _dialogoArticulo;
+        private DialogoModeloArticulo _dialogoModeloArticulo;
         private readonly IServiceProvider _serviceProvider;
         private DialogoUsuario _dialogoUsuario;
-
+        private UCListadoModelos _ucListadoModelos;
+        private UCListadoArticulos _ucListadoArticulos;
+        private UCListadoUsuarios _ucListadoUsuarios;
+        //serviceprovider se encarga de crear los new automaticamente
         public MainWindow(DialogoModeloArticulo dialogoModeloArticulo,
                           DialogoArticulo dialogoArticulo,
+                          IServiceProvider serviceProvider,
                           DialogoUsuario dialogoUsuario,
-                            IServiceProvider serviceProvider
-                          )
+                          UCListadoModelos ucListadoModelos,
+                          UCListadoArticulos ucListadoArticulos,
+                          UCListadoUsuarios ucListadoUsuarios)
         {
             InitializeComponent();
-            _dialogoModeloArticulo = dialogoModeloArticulo;
             _dialogoArticulo = dialogoArticulo;
+            _dialogoModeloArticulo = dialogoModeloArticulo;
             _dialogoUsuario = dialogoUsuario;
             _serviceProvider = serviceProvider;
-        }
-        private void btnAddArticulo_Click(object sender, RoutedEventArgs e)
-        {
-            _dialogoArticulo.ShowDialog();
-            _dialogoArticulo = _serviceProvider.GetService(typeof(DialogoArticulo)) as DialogoArticulo; 
+            _ucListadoModelos = ucListadoModelos;
+            _ucListadoArticulos = ucListadoArticulos;
+            _ucListadoUsuarios = ucListadoUsuarios;
+
         }
 
         private void btnAddModeloArticulo_Click(object sender, RoutedEventArgs e)
         {
             _dialogoModeloArticulo.ShowDialog();
-            _dialogoModeloArticulo = _serviceProvider.GetService(typeof(DialogoModeloArticulo)) as DialogoModeloArticulo;
+            _dialogoModeloArticulo = _serviceProvider.GetRequiredService<DialogoModeloArticulo>();
+
+        }
+
+        private void btnAddArticulo_Click(object sender, RoutedEventArgs e)
+        {
+            _dialogoArticulo.ShowDialog();
+            _dialogoArticulo = _serviceProvider.GetRequiredService<DialogoArticulo>();
         }
 
         private void btnAddUsuario_Click(object sender, RoutedEventArgs e)
         {
-          
             _dialogoUsuario.ShowDialog();
-            _dialogoUsuario = _serviceProvider.GetService(typeof(DialogoUsuario)) as DialogoUsuario;
+            _dialogoUsuario = _serviceProvider.GetRequiredService<DialogoUsuario>();
+        }
+
+        private void UCModelo_Click(object sender, RoutedEventArgs e)
+        {
+            panelPrincipal.Children.Clear();
+            panelPrincipal.Children.Add(_ucListadoModelos);
+        }
+        private void UCArticulo_Click(object sender, RoutedEventArgs e)
+        {
+            panelPrincipal.Children.Clear();
+            panelPrincipal.Children.Add(_ucListadoArticulos);
+        }
+        private void UCUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            panelPrincipal.Children.Clear();
+            panelPrincipal.Children.Add(_ucListadoUsuarios);
         }
     }
 }

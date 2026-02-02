@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios.UCListadoModelos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios"
+             x:Name="ucListadoModelos"
+             Loaded="ucListadoModelos_Loaded"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <TextBlock Text="LISTADO DE MODELOS DE ARTÍCULO" 
+                       FontSize="25" FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="20"
+                       Foreground="Purple"/>
+        </Grid>
+        <Grid>
+            <DataGrid ItemsSource="{Binding listaModelosArticulos}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectedItem="{Binding modeloArticulo}"
+                      CanUserAddRows="False"
+                      ColumnWidth="*">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="NOMBRE DEL MODELO " Binding="{Binding Nombre}"/>
+                    <DataGridTemplateColumn Header="MARCA - MODELO" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <TextBlock Text="{Binding Marca}" FontWeight="Bold"/>
+                                    <TextBlock Text=" - " />
+                                    <TextBlock Text="{Binding Modelo}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="CANTIDAD DE ARTÍCULOS" Binding="{Binding Articulos.Count}"/>
+                    <DataGridTextColumn Header="TIPO DE ARTÍCULO" Binding="{Binding TipoNavigation.Nombre}"/>
+                    <DataGridTextColumn Header="DESCRIPCION" Binding="{Binding Descripcion}"/>
+
+                </DataGrid.Columns>
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Editar Modelo de Articulo"
+                                  x:Name="miEditarModeloArticulo"
+                                  Click="miEditarModeloArticulo_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Recursos/Iconos/icons8-crear-nuevo-100.png"
+                                         Height="16"
+                                         Margin="0,0,10,0" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header="Borrar Modelo de Articulo"
+                                  
+                            x:Name="miBorrarModeloArticulo"
+                                  Click="miBorrarModeloArticulo_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Recursos/Iconos/icons8-basura-128.png"
+                                         Height="16"
+                                         Margin="0,0,10,0" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</UserControl>

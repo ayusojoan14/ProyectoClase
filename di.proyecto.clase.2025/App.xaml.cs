@@ -5,6 +5,7 @@ using di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios;
 using di.proyecto.clase._2025.Frontend_visual_.Dialogo;
 using di.proyecto.clase._2025.MVVM;
 using Microsoft.Extensions.DependencyInjection;
+
 using Microsoft.Extensions.Logging;
 using System.Configuration;
 using System.Data;
@@ -18,6 +19,10 @@ namespace di.proyecto.clase._2025
     /// </summary>
     public partial class App : Application
     {
+        //inversión de control, este apartado se crea para
+        //ahorrar codigo en los .cs del login en este caso, de esta forma
+        //no tendremos que poner new...
+
         private DiinventarioexamenContext _contexto;
         /// Propiedad para almacenar el proveedor de servicios
         private IServiceProvider _serviceProvider;
@@ -34,12 +39,14 @@ namespace di.proyecto.clase._2025
             _serviceProvider = serviceCollection.BuildServiceProvider();
             _contexto = new DiinventarioexamenContext();
         }
+
+        //Inyecta automaticamente la BBDD 
         private void ConfigureServices(ServiceCollection services)
         {
             // Configurar el contexto de la base de datos
             services.AddDbContext<DiinventarioexamenContext>();
             // Configurar el servicio de logging
-            services.AddLogging(configure => configure.AddConsole());
+            services.AddLogging(static configure => configure.AddConsole());
             // Registrar repositorios genéricos
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             // Registrar servicios y vistas aquí
@@ -54,44 +61,44 @@ namespace di.proyecto.clase._2025
             services.AddScoped<IGenericRepository<Articulo>, ArticuloRepository>();
             services.AddScoped<IGenericRepository<Usuario>, UsuarioRepository>();
             services.AddScoped<IGenericRepository<Tipousuario>, TipoUsuarioRepository>();
-            services.AddScoped<IGenericRepository <Rol>, RolRepository>();
+            services.AddScoped<IGenericRepository<Rol>, RolRepository>();
             services.AddScoped<IGenericRepository<Departamento>, DepartamentoRepository>();
-            services.AddScoped<ITipoUsuarioRepository, TipoUsuarioRepository>();
-
             // Registramos los servicios específicos
             services.AddScoped<UsuarioRepository>();
             services.AddScoped<ArticuloRepository>();
             services.AddScoped<ModeloArticuloRepository>();
             services.AddScoped<TipoArticuloRepository>();
-            services.AddScoped<DepartamentoRepository>();   
+            services.AddScoped<DepartamentoRepository>();
             services.AddScoped<EspacioRepository>();
-            services.AddScoped<DialogoModeloArticulo>();
-            services.AddScoped<UsuarioRepository>();
             services.AddScoped<RolRepository>();
             services.AddScoped<TipoUsuarioRepository>();
             // Registramos las interfaces de usuario
             services.AddTransient<Login>();
-            services.AddTransient<UCArticulos>();
-
-            //Me faltan los 2 users controls 
+            //services.AddTransient<UCArticulos>();
+            services.AddTransient<UCListadoModelos>();
+            services.AddTransient<UCListadoArticulos>();
+            services.AddTransient<UCListadoArticulos>();
+            services.AddTransient<UCListadoUsuarios>();
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();
             services.AddTransient<DialogoUsuario>();
-
-            //Registramos los objetos MVVM
+            //Registramos los objetos MVVM,
+            //el framework recomienda que los MV sean transient.
             services.AddTransient<MVArticulo>();
             services.AddTransient<MVUsuario>();
-
-
         }
+
+        //ESTE CODIGO HACE QUE EL LOGIN SEA LA PRIMERA VENTANA EN ABRIRSE AL EJECUTAR
         protected override void OnStartup(StartupEventArgs e)
         {
             // Se genera la ventana de Login
+            //esto es como un new
             var loginWindow = _serviceProvider.GetService<Login>();
             loginWindow.Show();
             base.OnStartup(e);
         }
     }
+
 
 }
 

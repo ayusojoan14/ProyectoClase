@@ -115,7 +115,6 @@ C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.cl
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\di.proyecto.clase.2025.csproj.AssemblyReference.cache
-C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArticulos.g.cs
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoArticulo.g.cs
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoModeloArticulo.g.cs
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\Login.g.cs
@@ -127,7 +126,6 @@ C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.cl
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\di.proyecto.clase.2025_MarkupCompile.cache
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\di.proyecto.clase.2025_MarkupCompile.lref
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\App.baml
-C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArticulos.baml
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoArticulo.baml
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoModeloArticulo.baml
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\Login.baml
@@ -148,5 +146,9 @@ C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.cl
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\ref\di.proyecto.clase.2025.dll
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoUsuario.g.cs
 C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\Dialogo\DialogoUsuario.baml
-C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\ListadoModelosArticulos.g.cs
-C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\ListadoModelosArticulos.baml
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoArticulos.g.cs
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoModelos.g.cs
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoArticulos.baml
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoModelos.baml
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoUsuarios.g.cs
+C:\Users\windows10\Downloads\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCListadoUsuarios.baml

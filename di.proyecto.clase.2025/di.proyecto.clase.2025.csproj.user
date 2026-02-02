@@ -2,10 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Frontend(visual)\ControlUsuarios\UCListadoModelosArticulos.xaml.cs">
+    <Compile Update="Frontend(visual)\ControlUsuarios\UCListadoArticulos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Frontend%28visual%29\ControlUsuarios\UCArticulos.xaml.cs">
+    <Compile Update="Frontend(visual)\ControlUsuarios\UCListadoModelos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frontend(visual)\ControlUsuarios\UCListadoUsuarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Frontend%28visual%29\Dialogo\DialogoArticulo.xaml.cs">

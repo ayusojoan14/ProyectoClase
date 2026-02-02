@@ -1,0 +1,203 @@
+﻿<UserControl x:Class="di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios.UCListadoArticulos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+
+        <!-- TÍTULO -->
+        <Grid DockPanel.Dock="Top">
+            <TextBlock Text="LISTADO DE ARTÍCULOS"
+                       FontSize="25"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="20"
+                       Foreground="Purple"/>
+        </Grid>
+
+        <!-- GRID PRINCIPAL -->
+        <Grid>
+
+            <DataGrid ItemsSource="{Binding listaArticulos}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectedItem="{Binding articulo}"
+                      CanUserAddRows="False"
+                      ColumnWidth="*"
+                      RowDetailsVisibilityMode="VisibleWhenSelected">
+
+                <!-- COLUMNAS -->
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="NÚMERO DE SERIE"
+                                        Binding="{Binding Numserie}" />
+
+                    <DataGridTextColumn Header="ESTADO"
+                                        Binding="{Binding Estado}" />
+
+                    <!-- FECHA ALTA -->
+                    <DataGridTemplateColumn Header="FECHA ALTA">
+
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Fechaalta, StringFormat=d}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+
+                        <DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <DatePicker SelectedDate="{Binding Fechaalta}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellEditingTemplate>
+
+                    </DataGridTemplateColumn>
+
+                    <!-- USUARIO -->
+                    <DataGridTextColumn Header="USUARIO"
+                                        Binding="{Binding UsuarioaltaNavigation}" />
+
+                    <!-- MODELO -->
+                    <DataGridTextColumn Header="NOMBRE DEL MODELO"
+                                        Binding="{Binding ModeloNavigation.Nombre}" />
+
+                    <!-- ESPACIO -->
+                    <DataGridTextColumn Header="ESPACIO"
+                                        Binding="{Binding Espacio}" />
+
+                    <!-- INFORMACIÓN PRÉSTAMO -->
+                    <DataGridTemplateColumn Header="INFORMACIÓN PRÉSTAMO">
+
+                        <DataGridTemplateColumn.CellTemplate>
+
+                            <DataTemplate>
+
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Row="0"
+                                               Grid.Column="0"
+                                               Text="Departamento:"
+                                               FontWeight="Bold"/>
+
+                                    <TextBlock Grid.Row="0"
+                                               Grid.Column="1"
+                                               Text="{Binding DepartamentoNavigation.Nombre}"/>
+
+                                    <TextBlock Grid.Row="1"
+                                               Grid.Column="0"
+                                               Text="Nº PRÉSTAMOS:"
+                                               FontWeight="Bold"/>
+
+                                    <TextBlock Grid.Row="1"
+                                               Grid.Column="1"
+                                               Text="{Binding Salida.Count}"/>
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Editar Artículo"
+                                  x:Name="miEditarArticulo"
+                                  Click="miEditarArticulo_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Recursos/Iconos/icons8-crear-nuevo-100.png"
+                                         Height="16"
+                                         Margin="0,0,10,0" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Borrar Artículo"
+                                  x:Name="miBorrarArticulo"
+                                  Click="miBorrarArticulo_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Recursos/Iconos/icons8-eliminar-100.png"
+                                         Height="16"
+                                         Margin="0,0,10,0" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+
+
+                <!-- DETALLE DE FILA -->
+                <DataGrid.RowDetailsTemplate>
+
+                    <DataTemplate>
+
+                        <DockPanel Margin="10">
+
+                            <TextBlock Text="LISTADO DE PRÉSTAMOS DEL ARTÍCULO"
+                                       FontSize="14"
+                                       FontWeight="Bold"
+                                       Margin="5"/>
+
+                            <ListBox ItemsSource="{Binding Salida}"
+                                     Margin="5">
+
+                                <ListBox.ItemTemplate>
+
+                                    <DataTemplate>
+
+                                        <Border BorderBrush="Gray"
+                                                BorderThickness="1"
+                                                Margin="5"
+                                                Padding="5">
+
+                                            <StackPanel>
+
+                                                <TextBlock Text="ID Préstamo:"
+                                                           FontWeight="Bold"/>
+
+                                                <TextBlock Text="{Binding Idprestamo}"/>
+
+                                                <TextBlock Text="Fecha Salida:"
+                                                           FontWeight="Bold"/>
+
+                                                <TextBlock Text="{Binding Fechasalida, StringFormat=d}"/>
+
+                                                <TextBlock Text="Fecha Devolución:"
+                                                           FontWeight="Bold"/>
+
+                                                <TextBlock Text="{Binding Fechadevolucion, StringFormat=d}"/>
+
+                                            </StackPanel>
+
+                                        </Border>
+
+                                    </DataTemplate>
+
+                                </ListBox.ItemTemplate>
+
+                            </ListBox>
+
+                        </DockPanel>
+
+                    </DataTemplate>
+
+                </DataGrid.RowDetailsTemplate>
+
+            </DataGrid>
+
+        </Grid>
+
+    </DockPanel>
+
+</UserControl>

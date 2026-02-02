@@ -27,52 +27,62 @@ namespace di.proyecto.clase._2025.Frontend_visual_.Dialogo
     public partial class DialogoArticulo : MetroWindow
     {
         private MVArticulo _mvArticulo;
-        public DialogoArticulo (MVArticulo mVArticulo)
+        public DialogoArticulo(MVArticulo mvArticulo)
         {
             InitializeComponent();
-            _mvArticulo = mVArticulo;
-
+            _mvArticulo = mvArticulo;
         }
 
-        private async void diagArticulo_Loaded(object sender, RoutedEventArgs e)
+
+        /*private async void diagArticulo_Loaded(object sender, RoutedEventArgs e)
+        { 
+            // Estado: valores fijos o tabla auxiliar
+            cmbEstado.ItemsSource = new List<string> { "Nuevo", "Usado", "Dañado" };
+            await _mvArticulo.Inicializa();
+            this.AddHandler(Validation.ErrorEvent, new RoutedEventHandler(_mvArticulo.OnErrorEvent));
+            //Esta línea enlaza la interfaz con el MV
+            //SI NO SE PONE DATACONTEXT NO FUNCIONARÁ EL ITEMSOURCE
+            DataContext = _mvArticulo;
+        }*/
+
+        public async Task Inicializa(Articulo articulo)
         {
             await _mvArticulo.Inicializa();
+            _mvArticulo.articulo = articulo;
             this.AddHandler(Validation.ErrorEvent, new RoutedEventHandler(_mvArticulo.OnErrorEvent));
             DataContext = _mvArticulo;
         }
 
-        
 
         private async void btnGuardarArticulo_Click(object sender, RoutedEventArgs e)
         {
-           
-            if (!_mvArticulo.IsValid(this))
+            try
             {
-                MensajeError.Mostrar("Existen errores en el formulario. Por favor, corríjalos antes de guardar.", "Error de validación");
-
-            }
-            else if (await _mvArticulo.GuardarArticuloAsync())
+                bool guardado = await _mvArticulo.GuardarArticuloAsync();
+                if (guardado)
                 {
-                    MensajeInformacion.Mostrar("Modelo de artículo guardado correctamente.", "Éxito");
-                    DialogResult = true;
-                
-            }
-
-                try
-            {
-              
-                
+                    MessageBox.Show("Artículo guardado correctamente", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al guardar " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error inesperado: " + ex.Message,
+                                "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
 
         private void btnCancelarArticulo_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;
+        }
+
+        private void cmbDepartamento_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
