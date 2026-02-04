@@ -48,16 +48,21 @@ namespace di.proyecto.clase._2025.MVVM
         //Filtros
         private List<Predicate<Modeloarticulo>> _criterios;
         private Tipoarticulo _tipoarticuloSeleccionado;
-        private Predicate<Modeloarticulo> _criterioTipoArticulo;
-        private String _textoNombre;
+        private Predicate<Modeloarticulo> _criterioTipoArticulo; 
+        private String _textoNombre; //Filtro 1
         private Predicate<Modeloarticulo> _criterioNombreTipo;
         private Predicate<object> _predicadoFiltros;
+        
+
+
+        //Filtro de melodelo de artículo
+        
 
 
         #endregion
         #region Getters y Setters
         public List<Tipoarticulo> listaTipoArticulos => _listaTipoArticulos;
-        public ListCollectionView listaModelosArticulos { get; set; }
+        public ListCollectionView listaModelosArticulos { get; set; } //Paso 3 de filtros
         public List<Usuario> listaUsuarios => _listaUsuarios;
         public ListCollectionView listaArticulos { get; set; }
         public List<Espacio> listaEspacios => _listaEspacios;
@@ -72,6 +77,7 @@ namespace di.proyecto.clase._2025.MVVM
             get => _modeloArticulo;
             set => SetProperty(ref _modeloArticulo, value);
         }
+        
         public Articulo articulo
         {
             get => _articulo;
@@ -128,8 +134,8 @@ namespace di.proyecto.clase._2025.MVVM
         #region Metodos privados
         private void InicializaCriterios()
         {
-            _criterioTipoArticulo = new Predicate<Modeloarticulo>(m => m.TipoNavigation != null
-                                                            && m.TipoNavigation.Equals(_tipoarticuloSeleccionado));
+            _criterioTipoArticulo = new Predicate<Modeloarticulo>(m => _tipoarticuloSeleccionado == null
+                                                            || m.Tipo == _tipoarticuloSeleccionado  Equals(_tipoarticuloSeleccionado));//5
             _criterioNombreTipo = new Predicate<Modeloarticulo>(m => !string.IsNullOrEmpty(_textoNombre)
                                                             && m.Nombre!.ToLower().StartsWith(_textoNombre.ToLower()));
         }
@@ -139,10 +145,12 @@ namespace di.proyecto.clase._2025.MVVM
             _listaDepartamentos = await GetAllAsync<Departamento>(_departamentoRepository);
             _listaUsuarios = await GetAllAsync<Usuario>(_usuarioRepository);
             _listaEspacios = await GetAllAsync<Espacio>(_espacioRepository);
-            _listaModelosArticulos = await GetAllAsync<Modeloarticulo>(_modeloArticuloRepository);
+            _listaModelosArticulos = await GetAllAsync<Modeloarticulo>(_modeloArticuloRepository); //Paso 2 de filtros
             _listaArticulos = await GetAllAsync<Articulo>(_articuloRepository);
-            listaModelosArticulos = new ListCollectionView(_listaModelosArticulos);
+            listaModelosArticulos = new ListCollectionView(_listaModelosArticulos); //Paso 3 de filtros
             listaArticulos = new ListCollectionView(_listaArticulos);
+           
+
             _criterios = new List<Predicate<Modeloarticulo>>();
         }
 
@@ -151,7 +159,7 @@ namespace di.proyecto.clase._2025.MVVM
             // Borramos los criterios
             _criterios.Clear();
             // Añadimos los criterios seleccionados
-            if (tipoarticuloSeleccionado != null) { _criterios.Add(_criterioTipoArticulo); }
+            if (tipoarticuloSeleccionado != null) { _criterios.Add(_criterioTipoArticulo); }//6
             if (!string.IsNullOrEmpty(textoNombre)) { _criterios.Add(_criterioNombreTipo); }
         }
 
@@ -169,6 +177,8 @@ namespace di.proyecto.clase._2025.MVVM
         {
             AddCriterios();
             listaModelosArticulos.Filter = _predicadoFiltros;
+            
+
         }
 
         public void LimpiarFiltros()
@@ -185,7 +195,7 @@ namespace di.proyecto.clase._2025.MVVM
 
 
 
-        public Tipoarticulo tipoarticuloSeleccionado
+        public Tipoarticulo tipoarticuloSeleccionado //4
         {
             get => _tipoarticuloSeleccionado;
             set => SetProperty(ref _tipoarticuloSeleccionado, value);

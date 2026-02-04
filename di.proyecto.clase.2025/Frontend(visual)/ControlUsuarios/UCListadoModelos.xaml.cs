@@ -52,10 +52,21 @@ namespace di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios
             }
 
         }
+        
 
         private void miBorrarModeloArticulo_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void textoNombreModelo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _mvArticulo.Filtrar();
+        }
+
+        private void tipoarticulo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           _mvArticulo.Filtrar();
         }
     }
 
