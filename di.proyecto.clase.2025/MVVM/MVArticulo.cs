@@ -134,8 +134,9 @@ namespace di.proyecto.clase._2025.MVVM
         #region Metodos privados
         private void InicializaCriterios()
         {
-            _criterioTipoArticulo = new Predicate<Modeloarticulo>(m => _tipoarticuloSeleccionado == null
-                                                            || m.Tipo == _tipoarticuloSeleccionado  Equals(_tipoarticuloSeleccionado));//5
+            _criterioTipoArticulo = new Predicate<Modeloarticulo>(m =>
+               _tipoarticuloSeleccionado == null ||  m.Tipo == _tipoarticuloSeleccionado.Idtipoarticulo ||
+               (m.TipoNavigation != null && m.TipoNavigation.Idtipoarticulo == _tipoarticuloSeleccionado.Idtipoarticulo) );//5
             _criterioNombreTipo = new Predicate<Modeloarticulo>(m => !string.IsNullOrEmpty(_textoNombre)
                                                             && m.Nombre!.ToLower().StartsWith(_textoNombre.ToLower()));
         }
