@@ -105,8 +105,8 @@ namespace di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/di.proyecto.clase.2025;component/frontend(visual)/controlusuarios/uclistadomodel" +
-                    "os.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/di.proyecto.clase.2025;V1.0.0.0;component/frontend(visual)/controlusuarios/uclis" +
+                    "tadomodelos.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Frontend(visual)\ControlUsuarios\UCListadoModelos.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
