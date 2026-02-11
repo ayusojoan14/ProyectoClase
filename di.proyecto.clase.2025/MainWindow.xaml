@@ -102,6 +102,21 @@ TitleBarHeight="40"
                             Margin="0,0,10,0"
                             Click="btnAddUsuario_Click"/>
                     </Fluent:RibbonGroupBox>
+                    
+                    <!-- Espacio -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="Espacio"
+                        Header="Espacio"
+                        Margin="5">
+
+                        <Fluent:Button
+                        x:Name="btnEspacio"
+                        Header="Espacio"
+                        LargeIcon="/Recursos/Iconos/articulo.png"
+                        Foreground="DarkOrange"
+                        Margin="0,0,10,0"
+                        Click="btnEspacio_Click"/>
+                    </Fluent:RibbonGroupBox>
 
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>

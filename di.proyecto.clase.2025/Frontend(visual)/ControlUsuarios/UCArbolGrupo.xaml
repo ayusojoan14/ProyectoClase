@@ -26,10 +26,10 @@
                                               ItemsSource="{Binding Usuarios}">
                         <StackPanel Orientation="Horizontal">
                             <mat:PackIcon Kind="Alcohol" Width="16" Foreground="MediumVioletRed"/>
-                            <TextBlock Text="{Binding Nombre}" Margin="10.0.0.0"/>
-                            
+                            <TextBlock Text="{Binding Nombre}" Margin="10,0,0,0"/>
+
                         </StackPanel>
-                        
+
                     </HierarchicalDataTemplate>
 
                     <HierarchicalDataTemplate DataType="{x:Type ent:Usuario}"
@@ -38,10 +38,12 @@
                         <StackPanel Orientation="Horizontal">
                             <mat:PackIcon Kind="Account" Width="16" Foreground="DarkBlue"/>
 
-                            <TextBlock Text="{Binding Nombre}" Margin="10.0.0.0"/>
+                            <TextBlock Text="{Binding Nombre}" Margin="10,0,0,0"/>
+                        </StackPanel>
                     </HierarchicalDataTemplate>
-                                             
                 </TreeView.Resources>
+            </TreeView>
+
 
         </Grid>
     </DockPanel>

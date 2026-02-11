@@ -1,4 +1,5 @@
-﻿using System;
+﻿using di.proyecto.clase._2025.Backend.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,5 +30,7 @@ namespace di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios
         {
 
         }
+
+       
     }
 }

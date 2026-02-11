@@ -1,4 +1,5 @@
-﻿using di.proyecto.clase._2025.MVVM;
+﻿using di.proyecto.clase._2025.Backend.Modelos;
+using di.proyecto.clase._2025.MVVM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,13 @@ namespace di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios
             // Aquí puedes enlazar la lista de espacios a un control de árbol o lista
             // Por ejemplo, si tienes un TreeView llamado treeViewEspacios:
             // treeViewEspacios.ItemsSource = _mvEspacio.listaespacios;
+        }
+        private void treeViewArbol_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            if(treeEspacios.SelectedItem is Espacio)
+            {
+                dgArticulosPorEspacio.ItemsSource = ((Espacio)treeEspacios.SelectedItem).Articulos;
+            }
         }
     }
 }

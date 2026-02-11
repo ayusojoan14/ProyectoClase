@@ -64,7 +64,9 @@ namespace di.proyecto.clase._2025
             services.AddScoped<IGenericRepository<Rol>, RolRepository>();
             services.AddScoped<IGenericRepository<Departamento>, DepartamentoRepository>();
             services.AddScoped<IGenericRepository<Espacio>, EspacioRepository>();
-            services.AddScoped<IGenericRepository<Grupo>, GrupoRepository>();   
+            services.AddScoped<IGenericRepository<Grupo>, GrupoRepository>();
+            
+            
             // Registramos los servicios específicos
             services.AddScoped<UsuarioRepository>();
             services.AddScoped<ArticuloRepository>();
@@ -75,12 +77,14 @@ namespace di.proyecto.clase._2025
             services.AddScoped<RolRepository>();
             services.AddScoped<TipoUsuarioRepository>();
             services.AddScoped<GrupoRepository>();
+            
             // Registramos las interfaces de usuario
             services.AddTransient<Login>();
             //services.AddTransient<UCArticulos>();
             services.AddTransient<UCListadoModelos>();
             services.AddTransient<UCListadoArticulos>();
             services.AddTransient<UCListadoUsuarios>();
+            services.AddTransient<UCArbolEspacio>();
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();
             services.AddTransient<DialogoUsuario>();
@@ -89,7 +93,7 @@ namespace di.proyecto.clase._2025
             services.AddTransient<MVArticulo>();
             services.AddTransient<MVUsuario>();
             services.AddTransient<MVEspacio>();
-            services.AddTransient<MVGrupo>();
+            services.AddTransient<MVGrupos>();
         }
 
         //ESTE CODIGO HACE QUE EL LOGIN SEA LA PRIMERA VENTANA EN ABRIRSE AL EJECUTAR

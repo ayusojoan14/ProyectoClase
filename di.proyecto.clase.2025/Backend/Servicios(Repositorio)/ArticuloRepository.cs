@@ -15,5 +15,10 @@ namespace di.proyecto.clase._2025.Backend.Servicios_Repositorio_
         public ArticuloRepository(DiinventarioexamenContext context,ILogger<GenericRepository<Articulo>> logger)
         :base(context,logger)
         { }
+
+        internal List<string> GetEstado()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
