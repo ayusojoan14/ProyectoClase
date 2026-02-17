@@ -29,6 +29,7 @@ namespace di.proyecto.clase._2025
         private UCListadoArticulos _ucListadoArticulos;
         private UCListadoUsuarios _ucListadoUsuarios;
         private UCArbolEspacio _ucArbolEspacio;
+        private UCArbolDepartamento _ucArbolDepartamento;
         //serviceprovider se encarga de crear los new automaticamente
         public MainWindow(DialogoModeloArticulo dialogoModeloArticulo,
                           DialogoArticulo dialogoArticulo,
@@ -37,7 +38,8 @@ namespace di.proyecto.clase._2025
                           UCListadoModelos ucListadoModelos,
                           UCListadoArticulos ucListadoArticulos,
                           UCListadoUsuarios ucListadoUsuarios,
-                          UCArbolEspacio uCArbolEspacio
+                          UCArbolEspacio uCArbolEspacio,
+                          UCArbolDepartamento uCArbolDepartamento
                           )
         {
             InitializeComponent();
@@ -49,7 +51,7 @@ namespace di.proyecto.clase._2025
             _ucListadoArticulos = ucListadoArticulos;
             _ucListadoUsuarios = ucListadoUsuarios;
             _ucArbolEspacio = uCArbolEspacio;
-
+            _ucArbolDepartamento = uCArbolDepartamento;
         }
 
         private void btnAddModeloArticulo_Click(object sender, RoutedEventArgs e)
@@ -90,6 +92,12 @@ namespace di.proyecto.clase._2025
         {
             panelPrincipal.Children.Clear();
             panelPrincipal.Children.Add(_ucArbolEspacio);
+        }
+
+        private void btnDepartamento_Click(object sender, RoutedEventArgs e)
+        {
+            panelPrincipal.Children.Clear();
+            panelPrincipal.Children.Add(_ucArbolDepartamento);
         }
     }
 }

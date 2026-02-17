@@ -85,6 +85,7 @@ namespace di.proyecto.clase._2025
             services.AddTransient<UCListadoArticulos>();
             services.AddTransient<UCListadoUsuarios>();
             services.AddTransient<UCArbolEspacio>();
+            services.AddTransient<UCArbolDepartamento>();
             services.AddTransient<DialogoModeloArticulo>();
             services.AddTransient<DialogoArticulo>();
             services.AddTransient<DialogoUsuario>();
@@ -94,6 +95,7 @@ namespace di.proyecto.clase._2025
             services.AddTransient<MVUsuario>();
             services.AddTransient<MVEspacio>();
             services.AddTransient<MVGrupos>();
+            services.AddTransient<MVDepartamento>();
         }
 
         //ESTE CODIGO HACE QUE EL LOGIN SEA LA PRIMERA VENTANA EN ABRIRSE AL EJECUTAR

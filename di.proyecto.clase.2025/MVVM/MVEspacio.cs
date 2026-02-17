@@ -16,7 +16,7 @@ namespace di.proyecto.clase._2025.MVVM
         //Repositorios necesarios para cargar los datos de los espacios, usuarios, departamentos y modelos de artículos
         private EspacioRepository _espaciorepository;
         private UsuarioRepository _usuariorepository;
-        private ModeloArticuloRepository _Modeloarticulorepository;
+        private ModeloArticuloRepository _modeloarticulorepository;
         private DepartamentoRepository _departamentorepository;
         private ArticuloRepository _articulorepository;
 
@@ -52,11 +52,12 @@ namespace di.proyecto.clase._2025.MVVM
                          ModeloArticuloRepository modeloArticuloRepository,
                          DepartamentoRepository departamentoRepository,
                          ArticuloRepository articuloRepository
+
                     )
         {
             _espaciorepository = espacioRepository;
                 _usuariorepository = usuarioRepository;
-                _Modeloarticulorepository = modeloArticuloRepository;
+                _modeloarticulorepository = modeloArticuloRepository;
                 _departamentorepository = departamentoRepository;
                 _articulorepository = articuloRepository;
 
@@ -68,7 +69,7 @@ namespace di.proyecto.clase._2025.MVVM
                 _listaespacios = await _espaciorepository.GetAllAsync();
                 _listausuarios = await _usuariorepository.GetAllAsync();
                 _listadepartamentos = await _departamentorepository.GetAllAsync();
-                _listaModeloArticulo = await _Modeloarticulorepository.GetAllAsync();
+                _listaModeloArticulo = await _modeloarticulorepository.GetAllAsync();
                 _listaestado = _articulorepository.GetEstado();
 
             }

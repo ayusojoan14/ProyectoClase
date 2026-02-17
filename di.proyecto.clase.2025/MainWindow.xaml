@@ -118,6 +118,21 @@ TitleBarHeight="40"
                         Click="btnEspacio_Click"/>
                     </Fluent:RibbonGroupBox>
 
+                    <!-- Departamento -->
+                    <Fluent:RibbonGroupBox
+                        x:Name="Gestion_Departamento"
+                        Header="Departamentoa"
+                        Margin="5">
+
+                        <Fluent:Button
+                        x:Name="btnDepartamento"
+                        Header="Espacio"
+                        LargeIcon="/Recursos/Iconos/articulo.png"
+                        Foreground="DarkOrange"
+                        Margin="0,0,10,0"
+                        Click="btnDepartamento_Click"/>  
+                    </Fluent:RibbonGroupBox>
+
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
 

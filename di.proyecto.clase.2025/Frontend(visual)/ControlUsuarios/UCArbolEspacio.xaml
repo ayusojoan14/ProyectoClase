@@ -20,8 +20,11 @@
                        Margin="10" />
 
         </Grid>
+
+
+        <!-- ESTE ES EL ARBOL DE LA IZQUIERDA PUESTO EN LA IZQUIERDA *ATENCION* FALTAS DE ORTOGRAFIA -->
         <Grid DockPanel.Dock="Left" Width="300">
-            <TreeView x:Name="treeEspacios" ItemsSource="{Binding listaEspacios}"
+            <TreeView x:Name="treeEspacios" ItemsSource="{Binding listaespacios}"
                       SelectedItemChanged="treeViewArbol_SelectedItemChanged">
                 <TreeView.Resources>
                     <HierarchicalDataTemplate DataType="{x:Type ent:Espacio}"
@@ -67,6 +70,11 @@
                 </TreeView.Resources>
             </TreeView>
         </Grid>
+
+        <!-- AQUI TERMINA EL ARBOL DE LA IZQUIERDA -->
+
+
+
         <Grid DockPanel.Dock="Bottom">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -83,20 +91,25 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
+            
+            
+            <!-- ESTOS SON LOS FILTROS DE ABAJO  -->
             <TextBlock Text="MODIFICA LAS PROPIEDADES DEL ARTÍCULO" Margin="20" FontSize="16" Foreground="DarkViolet" Grid.ColumnSpan="3" />
 
             <TextBox Grid.Row="1" mat:HintAssist.Hint="Número de Serie" Text="{Binding articuloSeleccionado.Numserie}"  Margin="20,0,20,0" Width="150" />
 
-            <ComboBox Grid.Row="2" mat:HintAssist.Hint="Estado del Articulo" ItemsSource="{Binding listaEstados}" DisplayMemberPath="Nombre" SelectedItem="{Binding articuloSeleccionado.Estado}" Margin="20" Width="150"  />
+            <ComboBox Grid.Row="2" mat:HintAssist.Hint="Estado del Articulo" ItemsSource="{Binding listaestado}" DisplayMemberPath="Nombre" SelectedItem="{Binding articuloSeleccionado.Estado}" Margin="20" Width="150"  />
             <DatePicker Grid.Row="1" Grid.Column="1" mat:HintAssist.Hint="Fecha de Alta"  Margin="20,0,20,0" Width="150" SelectedDate="{Binding articuloSeleccionado.Fechaalta}" />
-            <ComboBox Grid.Row="2" Grid.Column="1" mat:HintAssist.Hint="Usuario" Margin="20" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaUsuarios}" SelectedItem="{Binding articuloSeleccionado.UsuarioaltaNavigation}" />
-            <ComboBox Grid.Row="1" Grid.Column="2" mat:HintAssist.Hint="Modelo del Articulo" Margin="20,0,20,0" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaModelos}" SelectedItem="{Binding articuloSeleccionado.ModeloNavigation}" />
-            <ComboBox Grid.Row="2" Grid.Column="2" mat:HintAssist.Hint="Departamento" Margin="20" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaDepartamentos}" SelectedItem="{Binding articuloSeleccionado.DepartamentoNavigation}" />
-            <ComboBox Grid.Row="1" Grid.Column="3" mat:HintAssist.Hint="Espacio" Margin="20,0,20,0" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaEspacios}" SelectedItem="{Binding articuloSeleccionado.EspacioNavigation}" />
+            <ComboBox Grid.Row="2" Grid.Column="1" mat:HintAssist.Hint="Usuario" Margin="20" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listausuarios}" SelectedItem="{Binding articuloSeleccionado.UsuarioaltaNavigation}" />
+            <ComboBox Grid.Row="1" Grid.Column="2" mat:HintAssist.Hint="Modelo del Articulo" Margin="20,0,20,0" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaModeloArticulo}" SelectedItem="{Binding articuloSeleccionado.ModeloNavigation}" />
+            <ComboBox Grid.Row="2" Grid.Column="2" mat:HintAssist.Hint="Departamento" Margin="20" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listadepartamentos}" SelectedItem="{Binding articuloSeleccionado.DepartamentoNavigation}" />
+            <ComboBox Grid.Row="1" Grid.Column="3" mat:HintAssist.Hint="Espacio" Margin="20,0,20,0" Width="150" DisplayMemberPath="Nombre" ItemsSource="{Binding listaespacios}" SelectedItem="{Binding articuloSeleccionado.EspacioNavigation}" />
             <TextBox Grid.Row="2" Grid.Column="3" mat:HintAssist.Hint="Observaciones" Margin="20" Width="150" Text="{Binding articuloSeleccionado.Observaciones}"/>
 
             <Button Content="Modificar" Grid.Row="2" Grid.Column="4" x:Name="btnModificar" />
         </Grid>
+        
+        <!-- ESTE ES EL PANEL CENTRAL -->
         <Grid x:Name="panelCentral">
             <DataGrid x:Name="dgArticulosPorEspacio" AutoGenerateColumns="False"
                       Style="{StaticResource MahApps.Styles.DataGrid}"
@@ -104,7 +117,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Numero de serie" Binding="{Binding Numserie}" />
                     <DataGridTextColumn Header="Modelo de articulo" Binding="{Binding ModeloNavigation.Nombre}" />
-                    <DataGridTextColumn Header="Usuario" Binding="{Binding UsuarioaltaNavigation}" />
+                    <DataGridTextColumn Header="Usuario" Binding="{Binding UsuarioaltaNavigation.Nombre}" />
                     <DataGridTemplateColumn Header="Fecha de Alta">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

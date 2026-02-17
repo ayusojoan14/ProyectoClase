@@ -311,3 +311,5 @@ C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clas
 C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArbolEspacio.baml
 C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArbolGrupo.baml
+C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArbolDepartamento.g.cs
+C:\Users\windows10\Desktop\D.I. Completo\di.proyecto.clase.2025\di.proyecto.clase.2025\obj\Debug\net8.0-windows\Frontend(visual)\ControlUsuarios\UCArbolDepartamento.baml

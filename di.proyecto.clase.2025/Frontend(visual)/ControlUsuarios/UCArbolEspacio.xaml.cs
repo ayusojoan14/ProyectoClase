@@ -23,25 +23,28 @@ namespace di.proyecto.clase._2025.Frontend_visual_.ControlUsuarios
     public partial class UCArbolEspacio : UserControl
     {
         private MVEspacio _mvEspacio;
+        
 
         public UCArbolEspacio(MVEspacio mvEspacio)
         {
             InitializeComponent();
             _mvEspacio = mvEspacio;
+           
         }
 
         private async void ucArbolEspacio_Loaded(object sender, RoutedEventArgs e)
         {
             await _mvEspacio.Inicializa();
+            DataContext = _mvEspacio;
             // Aquí puedes enlazar la lista de espacios a un control de árbol o lista
             // Por ejemplo, si tienes un TreeView llamado treeViewEspacios:
             // treeViewEspacios.ItemsSource = _mvEspacio.listaespacios;
         }
         private void treeViewArbol_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
-            if(treeEspacios.SelectedItem is Espacio)
+            if (treeEspacios.SelectedItem is Espacio )
             {
-                dgArticulosPorEspacio.ItemsSource = ((Espacio)treeEspacios.SelectedItem).Articulos;
+               dgArticulosPorEspacio.ItemsSource = ((Espacio)treeEspacios.SelectedItem).Articulos;
             }
         }
     }
